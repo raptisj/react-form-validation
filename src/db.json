@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstName": "Mark",
+      "sugar": 33,
+      "song": "Night Drive.mp3"
+    },
+    {
+      "id": "2",
+      "firstName": "John",
+      "sugar": 13
+    }
+  ]
+}

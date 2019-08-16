@@ -1,0 +1,99 @@
+@import "abstracts/variables";
+
+
+body {
+	background: $bg;
+}
+
+.form-header {
+	color: grey;
+	margin: 20px 0 10px 0;
+	text-align: center;
+}
+
+.contact-form {
+	background: transparent;
+	border: 3px solid grey; 
+	border-radius: 10px;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.input-fields {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0;
+
+	label {
+		color: grey;
+		font-size: 1.1rem;
+		font-weight: 800;
+		margin-bottom: 10px;
+	}
+
+	input {
+		background: transparent;
+		border: 3px solid grey;
+		border-radius: 4px;
+		padding: 10px;
+		transition: .4s;
+	}
+	input:focus {
+		border: 3px solid darken(grey, 20%);
+		outline: 0;
+		transition: .4s;
+	}
+
+	input[type='text'] {
+		color: grey;
+	}
+}
+
+.verify__btn {
+	display: flex;
+	justify-content: center;
+	.btn {
+		background: grey;
+		color: #fff;
+		font-size: 1.1rem;
+		font-weight: 800;
+		letter-spacing: 1px;
+		padding: 1rem 1.3rem;
+		width: 100%;
+		max-width: 120px;
+		text-align: center;
+		text-decoration: none;
+		transition: .4s;
+
+		&:hover {
+			background: transparent;
+			color: grey;
+			outline: 4px solid grey;
+			outline-offset: -4px;
+			transition: .4s;
+		}
+	}
+
+	.btn--success {
+		background: green;
+
+		&:hover {
+			background: green;
+			color: #fff;
+			outline: 4px solid transparent;
+			outline-offset: -4px;
+			transition: .4s;
+		}
+	}
+}
+
+.error {
+	border: 3px solid red!important;
+}
+
+.error-msg {
+	color: red;
+	font-weight: 800;
+	text-align: center;
+}
